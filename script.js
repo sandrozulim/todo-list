@@ -32,7 +32,6 @@ class Todo {
 
   editTodo(liElement, target) {
     const parent = liElement.parentNode;
-
     const editInputField = document.createElement(`input`);
     editInputField.classList.add("new-todo__input--edit");
     liElement.replaceWith(editInputField);
@@ -43,6 +42,8 @@ class Todo {
     const btnEditCheck = document.createElement("i");
     btnEditCheck.classList.add("fa-solid", "fa-circle-check", "fa-xl");
     target.replaceWith(btnEditCheck);
+
+    editInputField.value = liElement.textContent;
 
     btnEditCheck.addEventListener("click", () => {
       if (editInputField.value !== "") {
