@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2fd5bc1fcd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>To-do list</title>
+  </head>
+  <body>
+    <main>
+      <header class="header | flex-col">
+        <h1 class="header__title">To-do list</h1>
+      </header>
+
+      <section class="flex-col">
+        <nav class="nav-main | flex-row">
+          <a href="#" class="nav-main__item">All</a>
+          <a href="#" class="nav-main__item">Done</a>
+          <a href="#" class="nav-main__item">Undone</a>
+        </nav>
+        <div class="new-todo | flex-row">
+          <input
+            class="new-todo__input"
+            type="text"
+            id="todo"
+            name="todo"
+            placeholder="..."
+          />
+          <i class="fa-solid fa-plus fa-2xl"></i>
+        </div>
+      </section>
+
+      <section class="flex-row">
+        <ol class="todo-list | flex-col"></ol>
+      </section>
+    </main>
+  </body>
+</html>
